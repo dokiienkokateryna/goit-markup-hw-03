@@ -12,6 +12,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -116,7 +117,9 @@ img {
 }
 
 .section-head {
+  margin: 0 auto;
   max-width: 496px;
+  padding-bottom: 48px;
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -129,6 +132,7 @@ img {
 .section-button {
   display: block;
   min-width: 169px;
+  margin: 0 auto;
   height: 56px;
   border: none;
   background-color: #4d5ae5;
@@ -164,7 +168,16 @@ img {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-two-head {
