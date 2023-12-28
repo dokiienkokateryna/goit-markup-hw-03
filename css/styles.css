@@ -112,9 +112,11 @@ img {
 
 .section {
   background: #2e2f42;
+  padding: 188px 0;
 }
 
 .section-head {
+  max-width: 496px;
   color: #fff;
   text-align: center;
   font-size: 56px;
@@ -122,6 +124,16 @@ img {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+}
+
+.section-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .section-button-text {
@@ -147,6 +159,14 @@ img {
 
 /**--------------------SECTION-TWO--------------------*/
 
+.section-two {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
 .section-two-head {
   color: #2e2f42;
   font-weight: 500;
@@ -155,7 +175,17 @@ img {
   letter-spacing: 0.02em;
 }
 
+.section-two-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.section-two-list {
+  width: calc((100% - 72px) / 4);
+}
+
 .section-two-head-three {
+  margin-bottom: 8px;
   color: #2e2f42;
   font-size: 20px;
   font-style: normal;
@@ -179,9 +209,11 @@ img {
 
 .section-three {
   background: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section-three-head {
+  margin-bottom: 72px;
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -192,11 +224,24 @@ img {
   text-transform: capitalize;
 }
 
+.section-three-menu {
+  display: flex;
+  gap: 24px;
+}
+
 .section-three-list {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.container-name {
+  padding: 32px 0;
 }
 
 .section-three-name {
+  text-align: center;
+  margin-bottom: 8px;
   color: #2e2f42;
   text-align: center;
   font-size: 20px;
@@ -207,6 +252,8 @@ img {
 }
 
 .section-three-paragraf {
+  text-align: center;
+
   color: #434455;
   text-align: center;
   font-size: 16px;
@@ -220,9 +267,25 @@ img {
 
 /**--------------------SECTION-FOUR--------------------*/
 
-.section-four-head-three {
+.section-four {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-four-head {
+  margin-bottom: 72px;
+}
+
+.section-four-menu {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.section-four-list {
+  width: calc((100% - 48px) / 3);
   color: #2e2f42;
-  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -230,8 +293,16 @@ img {
   letter-spacing: 0.02em;
 }
 
-.section-four-lis {
+.section-four-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.section-four-head-three {
+  margin-bottom: 8px;
   color: #2e2f42;
+  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -254,9 +325,12 @@ img {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
